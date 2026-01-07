@@ -2,7 +2,6 @@ import TelegramBot from 'node-telegram-bot-api';
 import fetch from 'node-fetch';
 import { SocksProxyAgent } from 'socks-proxy-agent';
 
-// --- KONFIGURASI ---
 const TELEGRAM_BOT_TOKEN = '8384402634:AAEJ99cglFtFXypWvVqfAjqvmhALY2QLddU';
 const MY_TELEGRAM_ID = '6769333774'; 
 
@@ -33,21 +32,20 @@ const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, { polling: true });
 
 bot.on('message', async (msg) => {
     const chatId = msg.chat.id.toString();
-    
-    // Keamanan: Hanya balas ID Anda
     if (chatId !== MY_TELEGRAM_ID) return;
 
     try {
         const data = JSON.parse(msg.text);
-        const { accessToken, cookie } = data;
+        const accessToken = data.accessToken;
+        // Cookie bersifat opsional sekarang
+        const cookie = data.cookie || ""; 
 
-        if (!accessToken || !cookie) {
-            return bot.sendMessage(chatId, "❌ Error: accessToken atau cookie tidak lengkap dalam JSON.");
+        if (!accessToken) {
+            return bot.sendMessage(chatId, "❌ Error: accessToken tidak ditemukan dalam JSON.");
         }
 
-        bot.sendMessage(chatId, "⏳ Memproses request via SOCKS5 (NG)...");
+        bot.sendMessage(chatId, `⏳ Memproses... (Cookie: ${cookie ? 'Ada' : 'Kosong'})`);
 
-        // Pilih satu proxy acak dari daftar 20 di atas
         const randomProxy = PROXY_LIST[Math.floor(Math.random() * PROXY_LIST.length)];
         const agent = new SocksProxyAgent(randomProxy);
 
@@ -61,7 +59,7 @@ bot.on('message', async (msg) => {
                 'origin': 'https://chatgpt.com',
                 'referer': 'https://chatgpt.com/veterans-claim',
                 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                'Cookie': cookie
+                'Cookie': cookie // Tetap dikirim meskipun kosong
             },
             body: JSON.stringify({ "program_id": "690415d58971e73ca187d8c9" })
         });
@@ -70,14 +68,13 @@ bot.on('message', async (msg) => {
         const vId = resData.verification_id;
 
         if (vId) {
-            bot.sendMessage(chatId, `✅ Verifikasi Berhasil!\n\nID: ${vId}\nLink:\nhttps://services.sheerid.com/verify/690415d58971e73ca187d8c9/?verificationId=${vId}`);
+            bot.sendMessage(chatId, `✅ Berhasil!\n\nLink:\nhttps://services.sheerid.com/verify/690415d58971e73ca187d8c9/?verificationId=${vId}`);
         } else {
-            bot.sendMessage(chatId, `⚠️ Respon diterima, tapi ID tidak ditemukan.\nDetail: ${JSON.stringify(resData)}`);
+            bot.sendMessage(chatId, `⚠️ Gagal. ChatGPT merespon:\n${JSON.stringify(resData)}`);
         }
     } catch (e) {
-        // Abaikan pesan yang bukan format JSON
         if (!(e instanceof SyntaxError)) {
-            bot.sendMessage(chatId, `❌ Kesalahan Sistem: ${e.message}`);
+            bot.sendMessage(chatId, `❌ Error: ${e.message}`);
         }
     }
 });
