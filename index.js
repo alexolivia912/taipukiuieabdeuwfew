@@ -7,37 +7,47 @@ const TELEGRAM_BOT_TOKEN = '8384402634:AAEJ99cglFtFXypWvVqfAjqvmhALY2QLddU';
 const MY_TELEGRAM_ID = '6769333774'; 
 
 const PROXY_LIST = [
-    'socks5://qhdrojvrsq-res-country-US-state-5128638-city-5128581-hold-session-session-695eb503a7af0-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443',
-    'socks5://qhdrojvrsq-res-country-US-state-5128638-city-5128581-hold-session-session-695eb503a5a8a-ttl-1:Pe8bSwcg3XYQDIP1@93.190.143.48:443',
-    'socks5://qhdrojvrsq-res-country-US-state-5128638-city-5128581-hold-session-session-695eb503a3cb7-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443',
-    'socks5://qhdrojvrsq-res-country-US-state-5128638-city-5128581-hold-session-session-695eb503a1ef8-ttl-1:Pe8bSwcg3XYQDIP1@93.190.143.48:443',
-    'socks5://qhdrojvrsq-res-country-US-state-5128638-city-5128581-hold-session-session-695eb5039fffa-ttl-1:Pe8bSwcg3XYQDIP1@93.190.143.48:443',
-    'socks5://qhdrojvrsq-res-country-US-state-5128638-city-5128581-hold-session-session-695eb5039db89-ttl-1:Pe8bSwcg3XYQDIP1@93.190.143.48:443',
-    'socks5://qhdrojvrsq-res-country-US-state-5128638-city-5128581-hold-session-session-695eb5039bae3-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443',
-    'socks5://qhdrojvrsq-res-country-US-state-5128638-city-5128581-hold-session-session-695eb50399c7b-ttl-1:Pe8bSwcg3XYQDIP1@93.190.143.48:443',
-    'socks5://qhdrojvrsq-res-country-US-state-5128638-city-5128581-hold-session-session-695eb50397ebe-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443',
-    'socks5://qhdrojvrsq-res-country-US-state-5128638-city-5128581-hold-session-session-695eb503943ae-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443'
+    'socks5://qhdrojvrsq-res-country-NG-hold-session-session-695eba5c258c8-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443',
+    'socks5://qhdrojvrsq-res-country-NG-hold-session-session-695eba5c23a52-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443',
+    'socks5://qhdrojvrsq-res-country-NG-hold-session-session-695eba5c22100-ttl-1:Pe8bSwcg3XYQDIP1@93.190.143.48:443',
+    'socks5://qhdrojvrsq-res-country-NG-hold-session-session-695eba5c2073e-ttl-1:Pe8bSwcg3XYQDIP1@93.190.143.48:443',
+    'socks5://qhdrojvrsq-res-country-NG-hold-session-session-695eba5c1ecda-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443',
+    'socks5://qhdrojvrsq-res-country-NG-hold-session-session-695eba5c1c794-ttl-1:Pe8bSwcg3XYQDIP1@93.190.143.48:443',
+    'socks5://qhdrojvrsq-res-country-NG-hold-session-session-695eba5c1aa07-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443',
+    'socks5://qhdrojvrsq-res-country-NG-hold-session-session-695eba5c18ab7-ttl-1:Pe8bSwcg3XYQDIP1@93.190.143.48:443',
+    'socks5://qhdrojvrsq-res-country-NG-hold-session-session-695eba5c16855-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443',
+    'socks5://qhdrojvrsq-res-country-NG-hold-session-session-695eba5c1494b-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443',
+    'socks5://qhdrojvrsq-res-country-NG-hold-session-session-695eba5c12ad9-ttl-1:Pe8bSwcg3XYQDIP1@93.190.143.48:443',
+    'socks5://qhdrojvrsq-res-country-NG-hold-session-session-695eba5c10cde-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443',
+    'socks5://qhdrojvrsq-res-country-NG-hold-session-session-695eba5c0ee35-ttl-1:Pe8bSwcg3XYQDIP1@93.190.143.48:443',
+    'socks5://qhdrojvrsq-res-country-NG-hold-session-session-695eba5c0ce4f-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443',
+    'socks5://qhdrojvrsq-res-country-NG-hold-session-session-695eba5c0abc1-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443',
+    'socks5://qhdrojvrsq-res-country-NG-hold-session-session-695eba5c08cd3-ttl-1:Pe8bSwcg3XYQDIP1@93.190.143.48:443',
+    'socks5://qhdrojvrsq-res-country-NG-hold-session-session-695eba5c06d7f-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443',
+    'socks5://qhdrojvrsq-res-country-NG-hold-session-session-695eba5c04d36-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443',
+    'socks5://qhdrojvrsq-res-country-NG-hold-session-session-695eba5c02e5d-ttl-1:Pe8bSwcg3XYQDIP1@93.190.143.48:443',
+    'socks5://qhdrojvrsq-res-country-NG-hold-session-session-695eba5bf2c58-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443'
 ];
 
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, { polling: true });
 
 bot.on('message', async (msg) => {
     const chatId = msg.chat.id.toString();
+    
+    // Keamanan: Hanya balas ID Anda
     if (chatId !== MY_TELEGRAM_ID) return;
 
     try {
         const data = JSON.parse(msg.text);
-        const accessToken = data.accessToken;
-        
-        // Mengambil cookie dari JSON jika ada
-        const cookie = data.cookie || ""; 
+        const { accessToken, cookie } = data;
 
-        if (!accessToken) {
-            return bot.sendMessage(chatId, "❌ Error: accessToken tidak ditemukan.");
+        if (!accessToken || !cookie) {
+            return bot.sendMessage(chatId, "❌ Error: accessToken atau cookie tidak lengkap dalam JSON.");
         }
 
-        bot.sendMessage(chatId, "⏳ Memproses request via SOCKS5...");
+        bot.sendMessage(chatId, "⏳ Memproses request via SOCKS5 (NG)...");
 
+        // Pilih satu proxy acak dari daftar 20 di atas
         const randomProxy = PROXY_LIST[Math.floor(Math.random() * PROXY_LIST.length)];
         const agent = new SocksProxyAgent(randomProxy);
 
@@ -60,13 +70,14 @@ bot.on('message', async (msg) => {
         const vId = resData.verification_id;
 
         if (vId) {
-            bot.sendMessage(chatId, `✅ Link Verifikasi:\nhttps://services.sheerid.com/verify/690415d58971e73ca187d8c9/?verificationId=${vId}`);
+            bot.sendMessage(chatId, `✅ Verifikasi Berhasil!\n\nID: ${vId}\nLink:\nhttps://services.sheerid.com/verify/690415d58971e73ca187d8c9/?verificationId=${vId}`);
         } else {
-            bot.sendMessage(chatId, `⚠️ Gagal mendapatkan ID. Response: ${JSON.stringify(resData)}`);
+            bot.sendMessage(chatId, `⚠️ Respon diterima, tapi ID tidak ditemukan.\nDetail: ${JSON.stringify(resData)}`);
         }
     } catch (e) {
+        // Abaikan pesan yang bukan format JSON
         if (!(e instanceof SyntaxError)) {
-            bot.sendMessage(chatId, `❌ Error: ${e.message}`);
+            bot.sendMessage(chatId, `❌ Kesalahan Sistem: ${e.message}`);
         }
     }
 });
