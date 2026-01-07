@@ -1,4 +1,3 @@
-socks5://qhdrojvrsq-res-country-SG-hold-session-session-695ecb639cadc:Pe8bSwcg3XYQDIP1@93.190.143.48:443
 socks5://qhdrojvrsq-res-country-SG-hold-session-session-695ecb639b19d:Pe8bSwcg3XYQDIP1@89.38.99.242:443
 socks5://qhdrojvrsq-res-country-SG-hold-session-session-695ecb639976e:Pe8bSwcg3XYQDIP1@93.190.143.48:443
 socks5://qhdrojvrsq-res-country-SG-hold-session-session-695ecb6397ee6:Pe8bSwcg3XYQDIP1@93.190.143.48:443
