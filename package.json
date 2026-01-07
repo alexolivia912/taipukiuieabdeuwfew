@@ -1,16 +1,16 @@
 {
-  "name": "chatgpt-verification-proxy",
+  "name": "chatgpt-telegram-bot",
   "version": "1.0.0",
-  "description": "Proxy server for ChatGPT verification to bypass Cloudflare Worker restrictions",
+  "description": "Bot Telegram untuk verifikasi ChatGPT dengan SOCKS5",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.19.2",
-    "cors": "^2.8.5",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "node-telegram-bot-api": "^0.66.0",
+    "socks-proxy-agent": "^8.0.3"
   },
   "engines": {
     "node": ">=18.0.0"
