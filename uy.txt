@@ -1,0 +1,10 @@
+socks5://qhdrojvrsq-res-country-UY-hold-session-session-695ec6f6aeacd-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443
+socks5://qhdrojvrsq-res-country-UY-hold-session-session-695ec6f6ad1be-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443
+socks5://qhdrojvrsq-res-country-UY-hold-session-session-695ec6f6ab85c-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443
+socks5://qhdrojvrsq-res-country-UY-hold-session-session-695ec6f6a9c12-ttl-1:Pe8bSwcg3XYQDIP1@93.190.143.48:443
+socks5://qhdrojvrsq-res-country-UY-hold-session-session-695ec6f6a7a78-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443
+socks5://qhdrojvrsq-res-country-UY-hold-session-session-695ec6f6a6153-ttl-1:Pe8bSwcg3XYQDIP1@93.190.143.48:443
+socks5://qhdrojvrsq-res-country-UY-hold-session-session-695ec6f6a4907-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443
+socks5://qhdrojvrsq-res-country-UY-hold-session-session-695ec6f6a2ec8-ttl-1:Pe8bSwcg3XYQDIP1@89.38.99.242:443
+socks5://qhdrojvrsq-res-country-UY-hold-session-session-695ec6f6a15f7-ttl-1:Pe8bSwcg3XYQDIP1@93.190.143.48:443
+socks5://qhdrojvrsq-res-country-UY-hold-session-session-695ec6f69df51-ttl-1:Pe8bSwcg3XYQDIP1@93.190.143.48:443
