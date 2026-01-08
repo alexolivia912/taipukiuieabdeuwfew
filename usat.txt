@@ -1,0 +1,1 @@
+socks5://rjnslw6czu-res-country-US-asn-20057.6389-hold-query:ttbuknWbq6vZ8i6Z@185.132.133.7:443
